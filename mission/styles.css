@@ -1,3 +1,4 @@
+
 body {
     max-width: 600px;
     font-family: 'Times New Roman';
@@ -7,6 +8,7 @@ body {
     margin-left: 100px;
     border-style: solid;
     border-width: 1px;
+
    
 }
 
@@ -48,4 +50,16 @@ footer img{
 
 li {
     padding-top:10px;
+}
+
+/* I thought that the white font looked good for dark mode */
+.dark {
+    color: white; 
+    background-color: #333;
+}
+
+
+.dark h2{
+    color: #0b9df8;
+    border-bottom: .5px solid white;
 }
