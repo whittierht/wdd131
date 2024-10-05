@@ -37,7 +37,7 @@ header, footer {
     color:white;
     text-decoration: none;
     text-align: center;
-    padding: 75px;
+    padding: 85px;
 }
 
 img {
@@ -86,11 +86,19 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .menu-button {
+        display:none;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .menu-button {
+        display:none;
     }
 }
