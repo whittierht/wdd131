@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto';
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid rgb(23, 23, 39);
+    background-color: rgb(63, 119, 141);
+}
+
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.column-left{
+    background-color: white;
+}
+
+.column-right{
+    background-color: white;
+    padding: 1rem;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding and border don't affect layout */
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap to a new line on smaller screens */
+}
+  
+@media screen and (max-width: 480px) {
+    .column {
+      float: none;
+      width: 100%;
+    }
+}
