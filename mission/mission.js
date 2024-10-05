@@ -1,7 +1,7 @@
 const themeSelector = document.querySelector('#mode-select');
 
 function changeTheme() {
-  const logo = document.getElementById('logo'); // Use getElementById instead of getElementsById
+  const logo = document.getElementById('logo'); 
 
   if (themeSelector.value === 'dark') {
     document.body.classList.add('dark');
@@ -12,5 +12,5 @@ function changeTheme() {
   }
 }
 
-// Add an event listener to the themeSelector element
+
 themeSelector.addEventListener('change', changeTheme);
