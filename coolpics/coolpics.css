@@ -31,7 +31,38 @@ header, footer {
     
 }
 
+.viewer img {
+    max-width:90%; 
+    max-height: calc(90vh - 40px);
+    object-fit: contain;
+ 
+ 
+}
 
+.viewer {
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display:grid;
+    place-items: center;
+    margin: 2%;
+    padding: 2%;
+}
+
+.close-viewer {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 150%;
+    cursor: pointer;
+    
+}
 
 .nav a {
     color:white;
@@ -40,7 +71,7 @@ header, footer {
     padding: 85px;
 }
 
-img {
+.gallery img {
     max-width: 100%;
     object-fit: cover;
     height: 250px;
@@ -71,6 +102,7 @@ img {
 .gallery {
     padding-top:30px;
     padding-bottom:30px;
+    text-align: center;
     
 }
 
