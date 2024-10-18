@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, san-serif;
+}
+
+
+
+header {
+    display: grid;
+    padding: 20px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+  
+header h1 {
+    text-align: center; 
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 50px;
+    font-family: var(--secondary-font);
+    font-size: 3em;
+}
+  
+nav {
+    justify-self: end; 
+    
+    
+}
+  
+nav ul {
+    display: grid;
+    grid-auto-flow: column; 
+    gap: 10px; 
+    list-style: none; 
+    text-decoration: none;
+    
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size:1.5em;
+    font-family: var(--secondary-font);
+    padding: 1em;
+}
+
+main {
+    padding: 20px;
+}
+  
+p {
+    font-size:1.3em;
+    padding: 0;
+    
+}
+
+.row {
+    display: grid;
+    grid-template-columns: .5fr 1.75fr .75fr; 
+    margin-bottom: 40px;   
+}
+  
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+
+    
+
+}
+  
+.img-column {
+    display: flex;
+    flex-direction: column;
+     
+}
+  
+.img-column h1 {
+    color: var(--accent-color);
+}
+
+img {
+    max-width: 40%;
+    padding-left:5%;
+}
+
+.right-column {
+    text-align: center;
+    border: 2px solid var(--secondary-color)
+  
+  }
