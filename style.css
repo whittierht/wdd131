@@ -49,7 +49,7 @@ header p {
 
 header p:hover {
     color: black;
-    font-size: 4em;
+    text-shadow: 2px 0 0 black;
     margin:40px;
     transition: 1s;
 }
