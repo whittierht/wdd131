@@ -1,15 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
 --primary-color: #52489c;
 --secondary-color: #59c3c3;
 --accent-color: #f45b69;
 --text-dark: #333;
 --text-light: #ebebeb;
---primary-font: Arial, Helvetica,sans-serif;
---secondary-font: Mooli, san-serif;
+--primary-font: Kanit, Helvetica,sans-serif;
+--secondary-font: Kanit, sans-serif;
 }
 
+.skiptocontent a {
+    position: absolute;
+    transform: scale(0);
+}
 
+.skiptocontent a:focus {
+    transform: scale(1              );
+}
 
 header {
     display: grid;
@@ -27,8 +34,6 @@ header h1 {
   
 nav {
     justify-self: end; 
-    
-    
 }
   
 nav ul {
@@ -36,28 +41,25 @@ nav ul {
     grid-auto-flow: column; 
     gap: 10px; 
     list-style: none; 
-    text-decoration: none;
-    
-    
-    
+    text-decoration: none;    
 }
 
 a {
     text-decoration: none;
     color: var(--accent-color);
     font-size:1.5em;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     padding: 1em;
 }
 
 main {
     padding: 20px;
+    font-family: var(--primary-font);
 }
   
 p {
     font-size:1.3em;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 .row {
@@ -71,15 +73,11 @@ p {
     display: flex;
     flex-direction: column;
     margin-right: 40px;
-
-    
-
 }
   
 .img-column {
     display: flex;
     flex-direction: column;
-     
 }
   
 .img-column h1 {
@@ -93,6 +91,19 @@ img {
 
 .right-column {
     text-align: center;
-    border: 2px solid var(--secondary-color)
-  
+    border: 2px solid var(--secondary-color);   
+    margin-left: 40px;
+
+  }
+
+  .book-button {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size:1.0em;
+  }
+
+  .book-button:hover {
+    color: var(--text-dark);
+    transition: 1s;
   }
