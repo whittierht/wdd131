@@ -101,6 +101,7 @@ img {
     border: none;
     color: var(--accent-color);
     font-size:1.0em;
+    transition: 1s;
   }
 
   .book-button:hover {
