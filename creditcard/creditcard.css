@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+  background-color: #a4c7ee;
+  font-family: "lato", 'helvetica-light';
+  position: relative;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  
+  
+}
+
+input {
+    height: 25px;
+}
+
+.frontCard, .backCard {
+    position: absolute;
+    background-color: #afb7b9;
+    width: 390px;
+    height: 250px;
+    border-radius: 7px;
+    padding: 20px 30px 20px 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    box-shadow: 3px 3px rgb(94, 91, 91);
+}
+
+.frontCard {
+    display:grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 2fr, 1fr;
+}
+
+#total {
+    grid-column-start:0;
+    padding-top: 5px;
+}
+
+.card-image {
+    grid-column-start: 2;
+    justify-self: right;
+    padding-right: 10px;
+}
+
+#cardNumberContainer {
+    grid-row-start: 2;
+    grid-column-start: 0;
+    width: 100%;
+
+
+}
+
+#cardNumberContainer input {
+    width:228%;
+    
+}
+
+#cardHolderContainer {
+    grid-row-start: 3;
+    grid-column-start: 0;
+    grid-column-end: 1;
+    padding-right: 30px;
+}
+
+#cardHolderContainer input {
+    width: 165%;
+}
+
+#expirationContainer {
+    grid-column-start: 2;
+    grid-row-start:3;
+    padding-left: 63px;
+    
+}
+
+#expirationContainer input {
+    width:50px;
+
+}
+
+.backCard {
+    z-index:-1;
+    margin-left:100px;
+    margin-top:40px;
+}
+
+#codeHolder {
+    position: absolute;
+    right:-28px;
+    bottom:20px;
+    width:110px;
+}
+
+#codeHolder input{
+    width:55px;
+
+}
+
+.button {
+   position: absolute;
+   margin-left: 430px;
+   padding-top: 300px;
+
+}
+
+.submit {
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.scanner {
+    margin-left: 148px;
+}
