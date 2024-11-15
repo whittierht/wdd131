@@ -134,7 +134,7 @@ footer a{
     width:75px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px){
     .recipe {
         flex-direction: row;
         width: 960px;
@@ -155,9 +155,11 @@ footer a{
         display:flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin-top: auto;
     }
 
     .flat {
         margin-top: 60px;
     }
 }
+
