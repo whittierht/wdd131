@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta chartset="UTF-8"/>
+        <meta charset="UTF-8"/>
         <link rel = "stylesheet" href = "recipes.css"/>
-        <script src = "main.js" defer></script>
+        <script src="main.js" type="module"></script>
         <meta property="og:title" content="Recipe Book">
         <meta property="og:description" content="this is a website with recipes">
         <meta property="og:image" content="https://whittierht.github.io/wdd131/recipes/images/recipe-book.png">
@@ -22,41 +22,28 @@
             </div>
             
             <div class = "search_bar">
-                <form class = "find" action = "/search" method = "get">
+                <form class = "find">
                     <input
+                     id = searched
                      type = "text" 
                      placeholder = "Find a recipe"
                      />
-                    <button class = "search" alt ="search">
-                        <img src = "images/search.svg" alt ="search icon">
-                    </button>
+                     <button class="search" alt="search" onclick="searchHandler()">
+                        <img src="images/search.svg" alt="search icon">
+                      </button>
                 </form>
-                
-                
+            </div>
+            <div class = "all-random">
+                <button class="all-recipes" alt="search" onclick="searchHandler()">
+                    All
+                  </button>
+                  <button class="random-recipe" alt="search" onclick="searchHandler()">
+                    Random
+                  </button>
             </div>
         </header>
         <main>
-            <div class = "recipe">
-                <img class = "recipe_img" alt="apple crisp"src = "images/apple-crisp.jpg">
-                <div class = "info">
-                    <h1 class = "type"><span style="border: 1px solid black; padding:5px;">
-                        dessert
-                    </span></h1>
-                    <h3 class = "name">Apple Crisp</h3>
-                    <span
-                        class="rating"
-                        role="img"
-                        aria-label="Rating: 4 out of 5 stars"
-                    >
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                    <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-                </div>
-            </div>
+            <div id = "recipe-block"></div>
         </main>
     </body>
     <footer>
