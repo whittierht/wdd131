@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --other-color:rgb(7, 156, 22);
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: "Amatic SC";
+    }
+
+.icon {
+    height:150px;
+    width: 150px;
+}
+
+.website-title {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap:10px;
+    color:black
+}
+
+header{
+    margin-top: -30px;
+    border-bottom: 2px solid black;
+
+}
+
+header h1{
+    text-align:center;
+    font-family: var(--secondary-font);
+    padding-top:50px;
+    font-size: 3em;
+}
+
+.topnav {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top:-20px;
+}
+
+header a {
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    transition: .5s;
+    font-family: var(--primary-font);
+}
+
+header a:hover {
+    transition: .5s;
+    transition-timing-function: linear;
+    color: var(--other-color);
+    text-shadow: 2px 2px 4px #636363;
+}
+
+.services {
+    padding-top: 1px;
+    background-image: url('images/meadow-7152269.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+    font-family: var(--primary-font);
+    text-align: center;
+    color:white;
+    height:400px;
+}
+
+.services h1 {
+    padding-top: 70px;
+    padding-bottom:30px;
+    color: var(--secondary-color);
+}
+
+.services h2 {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.all-about h1 {
+    color: var(--secondary-color);
+}
+
+.all-about {
+    border-top: 2px solid black;
+    background-image: url('images/lawn-768316.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+
+}
+
+
+.about{
+    padding-top: 20px;
+    text-align: center;
+    width: auto;
+    font-family: var(--primary-font);
+}
+
+.about img {
+    width: 300px;
+    height:300px;
+    border: 1.5px solid black;
+}
+
+
+.about-section p {
+    flex: 1; 
+    margin: 0; 
+    border: 1.5px solid black;
+    height:260px;
+    width: 260px;
+    padding:20px;
+    font-family: var(--primary-font);
+    font-size: 15px;
+    text-align: left;
+    background-color: white;
+}
+
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin:0 auto;
+    border-radius: 5px 5px 5px 5px;
+    border: 3px solid black;
+}
+
+.about-section p strong{
+    text-shadow: 1px 1px 2px #636363;
+}
+
+.about-section p em{
+    text-shadow: 1px 1px 2px #636363;
+}
+
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 1.5px solid black;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.image-container .behind-image {
+    opacity: 0;
+    z-index: 1;
+}
+
+.image-container:hover .behind-image {
+    opacity: 1;
+}
+
+.image-container:hover .lawnmower {
+    opacity: 0;
+}
+
+
+.contact {
+    border-top: 2px solid black;
+    text-align: center;
+    font-family: var(--primary-font);
+    border-bottom: 2px solid black;
+    background-image: url('images/grasses-348481.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 790px;
+    color:white;
+}
+
+.contact h1{
+    color: var(--secondary-color);
+}
+
+.button, .button2, .button3 {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: var(--other-color);
+    padding: 10px;
+    border: 4px solid var(--other-color);
+    border-radius: 10px 10px 10px 10px;
+    transition: .5s;
+    font-size: 1.3em;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 4px #636363;
+}
+
+.button2 {
+    font-size: 3em;
+}
+
+.button2:hover {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 4px #636363;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px; 
+}
+
+#subject {
+    width:50%;
+}
+
+input[type=text], select, textarea, input[type=tel], input[type=email] {
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    width:150px;
+    padding: 5px;
+    
+}
+
+input[type=submit], button[type=submit] {
+    margin-top: 5px;
+    padding:5px;
+    cursor: pointer;
+    background-color: var(--other-color);
+    border: 4px solid var(--other-color);
+    border-radius: 10px;
+    transition: .5s;
+    
+}
+button[type=submit]:hover {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 4px #636363;
+    transition: .5s;
+}
+
+input[type=submit]:hover {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 4px #636363;
+    transition: .5s;
+}
+
+#subject {
+    max-width:70% ;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 100px;
+    max-width:70%;
+    min-width:50%;
+}
+
+.information .social{
+    padding-bottom: 50px;
+}
+
+footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-title {
+    display:flex;
+    flex-direction: row-reverse;
+    font-family: var(--secondary-font);
+    gap: 5px;
+    color: black;
+}
+
+.footer-title p {
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.icon-footer {
+    height: 50px;
+    width: 50px;
+}
+
+.social a img {
+    height:50px;
+    width:50px;
+    background-color: white;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+.social a img:hover {
+    background-color: var(--other-color);
+    transition: .5s;
+}
+
+#hidden-form {
+    font-family: var(--primary-font);
+}
+
+.service-card{
+    font-family: var(--primary-font);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: .25s;
+    border: 10px solid transparent
+    
+}
+
+.service-card:hover { 
+    border-radius: 200px;
+    transition: .25s;
+    border: 10px solid black;
+    
+}
+
+
+.service-card img { 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: .5; 
+}
+
+
+.service-card button {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+    font-size: 2em;
+    padding: 25px;
+    background-color: var(--other-color);
+    border: none;
+    
+}
+
+.service-card button:hover {
+    opacity: .9;
+    transition: .5s;
+}
+
+
+#services-section h1 {
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--other-color);
+}
+
+#services-section {
+    border-top: 2px solid black
+}
+
+#hidden-form {
+    display: none;
+    padding: 20px;
+    background-image:url("images/lawn-768316.webp");
+    border-top: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.button3{
+    position: absolute;
+    font-size: 15px;
+    margin:5px;
+
+}
+
+.button3:hover{
+    font-size: 15px;
+    margin:5px;
+    background-color: red;
+    border: 4px solid black;
+}
+
+
+
+#hidden-form input {
+    text-align:center;
+}
+
+@media screen and (min-width: 650px){
+    .about-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 606px;
+        margin:0 auto;
+        border-radius: 5px 5px 5px 5px;
+        border: 3px solid black; 
+    }
+
+    .contact-all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .contact {
+        height:450px;
+    }
+
+    .information h1{
+        padding-bottom: 5px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 800px){
+    #services-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto ;
+        width: 770px;
+        margin: auto;
+    }
+
+}
+
