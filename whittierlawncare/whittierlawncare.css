@@ -9,6 +9,7 @@
     --secondary-font: "Amatic SC";
     }
 
+/* Header */
 .icon {
     height:150px;
     width: 150px;
@@ -55,7 +56,9 @@ header a:hover {
     color: var(--other-color);
     text-shadow: 2px 2px 4px #636363;
 }
+/* Header */
 
+/* Need Help? */
 .services {
     padding-top: 1px;
     background-image: url('images/meadow-7152269.webp');
@@ -81,6 +84,9 @@ header a:hover {
     padding-right: 10px;
 }
 
+/* Need Help? */
+
+/* About */
 .all-about h1 {
     color: var(--secondary-color);
 }
@@ -175,24 +181,280 @@ header a:hover {
 }
 
 
+/* About */
+
+/* Contacting */
 .contact {
     border-top: 2px solid black;
-    text-align: center;
     font-family: var(--primary-font);
     border-bottom: 2px solid black;
     background-image: url('images/grasses-348481.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 790px;
+    height: 400px;
     color:white;
+    display: flex;
+    flex-direction: column;
 }
+
+
+
+
 
 .contact h1{
     color: var(--secondary-color);
+    text-align: center;
 }
 
-.button, .button2, .button3 {
+#subject {
+    width:50%;
+}
+
+.information .social{
+    padding-bottom: 50px;
+}
+
+.information {
+    font-family: var(--primary-font);
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+
+.contact-buttons {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+/* Contacting */
+
+/* Forms */
+.contact-all form {
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.contact-all form label {
+    text-align: center; 
+    margin-bottom: 5px; 
+    color: black;
+}
+
+.contact-all form input,
+.contact-all form select,
+.contact-all form textarea {
+    width: 70%; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    
+    
+}
+
+.contact-all form textarea {
+    height:100px;
+}
+
+.contact-all form input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--other-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.contact-all form input[type="submit"]:hover {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 4px #636363;
+    transition: 0.5s;
+}
+
+form.hiddenc{
+    gap: 10px; 
+    background-color: rgb(255, 255, 255, .8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px; 
+    
+}
+
+.hidden-contact{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: var(--primary-font);
+    animation: slideDown 0.4s ease-out;
+    padding: 0px;
+    border-radius: 10px;
+    animation-name: slideDown;
+    animation-duration: 0.4s;
+    background-image:url("images/lawn-768316.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fefefe;
+}
+
+/* Hidden Form Modal*/
+.hidden-form {
+    padding: 20px;
+    background-image:url("images/lawn-768316.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: var(--primary-font);
+    animation: slideDown 0.4s ease-out;
+    background-color: #fefefe;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: slideDown;
+    animation-duration: 0.4s;
+    display: grid;
+    place-items: center;  
+}
+
+
+.modal-overlay, .form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0%;
+    z-index: 1000;
+    overflow-y:auto;
+  }
+
+  .hidden input[type=submit], .hidden button[type=submit] {
+    padding:15px 30px;
+    font-size: 1.2em;
+    margin-top:15px;
+}
+  
+  /* Slide Down Animation */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+form.hidden label {
+    text-align: right; 
+    padding-right: 10px; 
+    padding-top: 10px;
+}
+
+form.hidden input,
+form.hidden select {
+    width: 100%; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+form.hidden{
+    display: grid;
+    grid-template-columns: .75 1fr; 
+    gap: 10px; 
+    background-color: rgb(255, 255, 255, .8);
+    padding: 20px;
+    border-radius: 0px  0px 8px 8px;
+    width: 600px; 
+    
+}
+
+
+
+#hidden-form #city {
+    width:51%;
+    height: 40px;
+}
+
+#hidden-form input {
+    text-align:left;
+    width: 50%;
+    height: 30px;
+    font-size: 15px;
+    
+}  
+/* Hidden Form */
+/* Forms */
+
+/* footer */
+footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-title {
+    display:flex;
+    flex-direction: row-reverse;
+    font-family: var(--secondary-font);
+    gap: 5px;
+    color: black;
+}
+
+.footer-title p {
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.icon-footer {
+    height: 50px;
+    width: 50px;
+}
+/* footer */
+  
+/* social */
+.social a img {
+    height:50px;
+    width:50px;
+    background-color: white;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+.social a img:hover {
+    background-color: var(--other-color);
+    transition: .5s;
+}
+/* Social */
+
+/* Buttons */
+.button, .button2 {
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-color: var(--other-color);
@@ -219,35 +481,82 @@ header a:hover {
     text-shadow: 2px 2px 4px #636363;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:5px; 
-}
-
-#subject {
-    width:50%;
-}
-
-input[type=text], select, textarea, input[type=tel], input[type=email] {
-    border: 1px solid black;
-    border-radius: 5px 5px 5px 5px;
-    width:150px;
-    padding: 5px;
-    
-}
-
-input[type=submit], button[type=submit] {
-    margin-top: 5px;
-    padding:5px;
-    cursor: pointer;
-    background-color: var(--other-color);
-    border: 4px solid var(--other-color);
-    border-radius: 10px;
+.service-card button {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
     transition: .5s;
+    font-size: 2em;
+    padding: 25px;
+    color:rgb(0, 0, 0);
+    border: none;
     
 }
+
+.service-card button:hover {
+    opacity: .5;
+    transition: .5s;
+}
+
+#closer-button {
+    position: absolute;
+    font-size: 10px;
+    margin-left: 370px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: var(--other-color);
+    padding: 10px;
+    transition: .5s;
+    font-family: var(--primary-font);
+    border:none;
+    margin-bottom: 420px;
+
+}
+
+#closer-button-contact{
+    position: absolute;
+    font-size: 10px;
+    margin-left: 475px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: var(--other-color);
+    padding: 10px;
+    transition: .5s;
+    font-family: var(--primary-font);
+    border:none;
+    margin-top: 45px;
+}
+
+#closer-button-contact:hover{
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px #636363;
+    transition: .5s;
+    border:none;
+}
+
+#closer-button:hover{
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px #636363;
+    transition: .5s;
+    border:none;
+}
+
+form.hidden button {
+    grid-column: span 2; 
+    justify-self: center; 
+    padding: 10px 20px;
+    background-color: var(--other-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 button[type=submit]:hover {
     background-color: transparent;
     color: white;
@@ -255,71 +564,10 @@ button[type=submit]:hover {
     transition: .5s;
 }
 
-input[type=submit]:hover {
-    background-color: transparent;
-    color: white;
-    text-shadow: 2px 2px 4px #636363;
-    transition: .5s;
-}
 
-#subject {
-    max-width:70% ;
-}
+/* Buttons */
 
-textarea {
-    min-height: 100px;
-    max-height: 100px;
-    max-width:70%;
-    min-width:50%;
-}
-
-.information .social{
-    padding-bottom: 50px;
-}
-
-footer {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.footer-title {
-    display:flex;
-    flex-direction: row-reverse;
-    font-family: var(--secondary-font);
-    gap: 5px;
-    color: black;
-}
-
-.footer-title p {
-    margin-bottom: 10px;
-    padding-top: 5px;
-}
-
-.icon-footer {
-    height: 50px;
-    width: 50px;
-}
-
-.social a img {
-    height:50px;
-    width:50px;
-    background-color: white;
-    border-radius: 7px;
-    transition: .5s;
-}
-
-.social a img:hover {
-    background-color: var(--other-color);
-    transition: .5s;
-}
-
-#hidden-form {
-    font-family: var(--primary-font);
-}
-
+/* Services */
 .service-card{
     font-family: var(--primary-font);
     width: 300px;
@@ -331,17 +579,13 @@ footer {
     overflow: hidden;
     margin-bottom: 25px;
     transition: .25s;
-    border: 10px solid transparent
-    
+    border: 10px solid transparent  
 }
 
 .service-card:hover { 
-    border-radius: 200px;
     transition: .25s;
     border: 10px solid black;
-    
 }
-
 
 .service-card img { 
     height: 100%;
@@ -354,28 +598,6 @@ footer {
     opacity: .5; 
 }
 
-
-.service-card button {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: .5s;
-    font-size: 2em;
-    padding: 25px;
-    background-color: var(--other-color);
-    border: none;
-    
-}
-
-.service-card button:hover {
-    opacity: .9;
-    transition: .5s;
-}
-
-
 #services-section h1 {
     font-family: var(--secondary-font);
     text-align: center;
@@ -386,37 +608,9 @@ footer {
 #services-section {
     border-top: 2px solid black
 }
+/* Services */
 
-#hidden-form {
-    display: none;
-    padding: 20px;
-    background-image:url("images/lawn-768316.webp");
-    border-top: 2px solid black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.button3{
-    position: absolute;
-    font-size: 15px;
-    margin:5px;
-
-}
-
-.button3:hover{
-    font-size: 15px;
-    margin:5px;
-    background-color: red;
-    border: 4px solid black;
-}
-
-
-
-#hidden-form input {
-    text-align:center;
-}
-
+/* Screen Size */
 @media screen and (min-width: 650px){
     .about-section {
         display: flex;
@@ -427,6 +621,12 @@ footer {
         margin:0 auto;
         border-radius: 5px 5px 5px 5px;
         border: 3px solid black; 
+        
+    }
+
+    #closer-button{
+        margin-left: 500px;
+    
     }
 
     .contact-all {
@@ -435,16 +635,31 @@ footer {
         
     }
     .contact {
-        height:450px;
+        height:300px;
+        display: flex;
+        flex-direction: row;
     }
 
     .information h1{
         padding-bottom: 5px;
     }
+
+    .information {
+        font-family: var(--primary-font);
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
+    .contact-buttons {
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+        
+    }
 }
-
-
-
 
 @media screen and (min-width: 800px){
     #services-block {
@@ -455,5 +670,7 @@ footer {
         margin: auto;
     }
 
-}
 
+
+}
+/* Screen Size */

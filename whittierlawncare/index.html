@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel = "stylesheet" href = "whittierlawncare.css"/>
+        <script src="whittierlawncarehome.js" defer></script>
         <meta name = "author" content = "Hyrum Whittier"/>
         <meta property="og:description" content="Whittier Lawn Care is the best!">
         <meta name = "description" content = "Website for Whittier Lawn Care in Saratoga Springs and Eagle Mountain"/>
@@ -75,14 +76,29 @@
                 </div>
             </div>
             <div class="contact" id = "contact">
-        
-                <div class ="contact-all">
-                    <div class = "form-container">
-                        <form action="">
+                <div class = "information">
+                    <div class = contact-info></div>
+                        <h1>Contact Info</h1>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> whittierlawncare@gmail.com</p>
+                        <p><strong>Mailing Address:</strong> 123 Main Street</p>
+                    </div>
+                    <div class = contact-buttons>
+                        <button class = "button" id = "contact-button">Contact Us Now</button>
+                        <a href="services.html#services-section" class = "button">Get Help Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="contact-all">
+                <div class = "form-container" id="form-container">
+                    <div class= "hidden-contact">
+                        <button class="button3" id="closer-button-contact">X</button>
+                        <form class = "hiddenc"action="">
                             <h1>Contact us</h1>
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="John Smith" required>
-                        
+                            
                             <label for="email">Email</label>
                             <input type="text" id="email" name="email" placeholder="johnsmith@email.com" required>
 
@@ -95,32 +111,27 @@
 
                             <label for="subject">Subject</label>
                             <textarea id="subject" required name="subject" placeholder="Your message here..."></textarea>
-                        
+                            
                             <input type="submit" value="Submit">
                         </form>
-                    </div>
-                    <div class = "information">
-                        <h1>Contact Info</h1>
-                        <p><strong>Phone:</strong> (123) 456-7890</p>
-                        <p><strong>Email:</strong> whittierlawncare@gmail.com</p>
-                        <p><strong>Mailing Address:</strong> 123 Main Street</p>
-                        <div class="social">
-                            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-                            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
-                            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
-                            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
-                        </div>
-                        <a href="services.html#services-section" class = "button">Get Help Now</a>
                     </div>
                 </div>
             </div>
         </main>
     </body>
+
     <footer>
         <div class="footer-title">
             <p><strong>Whittier Lawn Care</strong></p>
             <img class= "icon-footer" src="images/lawnmower.png" alt="lawnmowing icon">
         </div>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
     </footer>
+
 
 </html>
