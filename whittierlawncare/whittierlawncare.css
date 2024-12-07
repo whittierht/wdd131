@@ -508,7 +508,6 @@ footer {
 #closer-button {
     position: absolute;
     font-size: 10px;
-    margin-left: 370px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: var(--other-color);
@@ -517,6 +516,9 @@ footer {
     font-family: var(--primary-font);
     border:none;
     margin-bottom: 420px;
+    margin-left: 500px;
+    
+    }
 
 }
 
