@@ -11,8 +11,8 @@
 
 /* Header */
 .icon {
-    height:150px;
-    width: 150px;
+    height:120px;
+    
 }
 
 .website-title {
@@ -20,12 +20,13 @@
     align-items: center; 
     justify-content: center; 
     gap:10px;
-    color:black
+    color:var(--other-color)
 }
 
 header{
     margin-top: -30px;
     border-bottom: 2px solid black;
+    background-color: rgba(7, 250, 60, 0.7);
 
 }
 
@@ -188,7 +189,7 @@ header a:hover {
     border-top: 2px solid black;
     font-family: var(--primary-font);
     border-bottom: 2px solid black;
-    background-image: url('images/grasses-348481.webp');
+    background-image: url('images/grasses-348481.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -417,6 +418,7 @@ footer {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: rgba(7, 250, 60, 0.7);
 }
 
 .footer-title {
@@ -424,17 +426,17 @@ footer {
     flex-direction: row-reverse;
     font-family: var(--secondary-font);
     gap: 5px;
-    color: black;
+    color: var(--other-color);
 }
 
 .footer-title p {
     margin-bottom: 10px;
-    padding-top: 5px;
+    padding-top: 0px;
+    font-size: 25px;
 }
 
 .icon-footer {
     height: 50px;
-    width: 50px;
 }
 /* footer */
   
@@ -469,6 +471,7 @@ footer {
     background-color: transparent;
     color: white;
     text-shadow: 2px 2px 4px #636363;
+    border:4px solid transparent;
 }
 
 .button2 {
@@ -479,6 +482,7 @@ footer {
     background-color: transparent;
     color: white;
     text-shadow: 2px 2px 4px #636363;
+    border:4px solid transparent;
 }
 
 .service-card button {
@@ -555,7 +559,9 @@ form.hidden button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: .2s;
 }
+
 
 button[type=submit]:hover {
     background-color: transparent;
@@ -568,6 +574,14 @@ button[type=submit]:hover {
 /* Buttons */
 
 /* Services */
+
+#thank-you-message, #contact-message {
+    color:white;
+    border-bottom: #ffd105 solid 5px;
+    display: none;
+    text-align: center;
+}
+
 .service-card{
     font-family: var(--primary-font);
     width: 300px;
@@ -580,6 +594,10 @@ button[type=submit]:hover {
     margin-bottom: 25px;
     transition: .25s;
     border: 10px solid transparent  
+}
+
+.service-card p {
+    text-align: left;
 }
 
 .service-card:hover { 
@@ -606,7 +624,8 @@ button[type=submit]:hover {
 }
 
 #services-section {
-    border-top: 2px solid black
+    border-top: 2px solid black;
+
 }
 /* Services */
 
@@ -657,6 +676,9 @@ button[type=submit]:hover {
         margin-left: auto;
         margin-right: auto;
         margin-top: 75px;
+        flex-direction: row;
+        height: 55px;
+        margin-top: 115px;
         
     }
 }
@@ -670,7 +692,18 @@ button[type=submit]:hover {
         margin: auto;
     }
 
-
-
 }
+
+    @media screen and (min-width: 1200px){
+        #services-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:auto ;
+            width: 770px;
+            margin: auto;
+            justify-content: center;
+        }
+}
+
+
 /* Screen Size */

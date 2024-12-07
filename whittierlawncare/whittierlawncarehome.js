@@ -25,3 +25,12 @@ function closeContactModal(event) {
 
 const contactOverlay = document.getElementById('form-container');
 contactOverlay.addEventListener('click', closeContactModal);
+
+const contactMessage = document.getElementById("contact-message");
+const form = document.getElementById("contact-form");
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  contactMessage.style.display = 'block';
+  window.setTimeout(closeModal, 5000)
+})

@@ -8,7 +8,7 @@
         <meta name = "despcription" content = "Website for Whittier Lawn Care"/>
         <meta name = "description" content = "Website for Whittier Lawn Care in Saratoga Springs and Eagle Mountain"/>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
-        <link rel="icon" type="image/x-icon" href="images/lawnmower.png">
+        <link rel="icon" type="image/x-icon" href="images/lawnmowerwhite.png">
         <title>Whittier Lawn Care</title>
     </head>
     <body>
@@ -22,7 +22,7 @@
                     <a href = "index.html">Home</a>
                     <a href = "services.html#services-section">Services</a>
                     <a href = "index.html#about">About</a>
-                    <a href = "#Contact">Contact</a>
+                    <a href = "services.html#contact">Contact</a>
                 </div>
             </div>
         </header>
@@ -43,7 +43,7 @@
                 <div class = "hidden-form" id="hidden-form">
                     <h1>Service Sign Up</h1>
                     <button class="button3" id="closer-button">X</button>
-                    <form class="hidden">
+                    <form class="hidden" id = "form-hidden">
                         <label for="service-name">Service:</label>
                         <input type="text" id="service-name" name="service-name" readonly>
                         
@@ -67,7 +67,9 @@
                         <input type="tel" id="phone" name="phone" placeholder="(801)123-456" required>
 
                         <button type="submit">Sign Up</button>
+                
                     </form>
+                    <p id = "thank-you-message">Thank you for signing up with Whittier Lawn Care, we will contact you shortley!</p>
                 </div>
             </div>
             <div class="contact" id = "contact">
@@ -89,7 +91,7 @@
                 <div class = "form-container" id="form-container">
                     <div class= "hidden-contact">
                         <button class="button3" id="closer-button-contact">X</button>
-                        <form class = "hiddenc"action="">
+                        <form class = "hiddenc" id ="contact-form">
                             <h1>Contact us</h1>
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="John Smith" required>
@@ -109,6 +111,7 @@
                             
                             <input type="submit" value="Submit">
                         </form>
+                        <p id = "contact-message">Thank you, we will get back to your soon!</p>
                     </div>
                 </div>
             </div>

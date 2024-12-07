@@ -51,6 +51,7 @@ function closeModal(event) {
   const modalOverlay = document.getElementById('modal-overlay');
   if (event.target === modalOverlay) {
     modalOverlay.style.display = 'none';
+    thankYouMessage.style.display = 'none';
   }
 }
 
@@ -59,7 +60,6 @@ renderServices();
 const modalOverlay = document.getElementById('modal-overlay');
 modalOverlay.addEventListener('click', closeModal);
 
-// Smooth Scroll for Services Section
 const myButton = document.getElementById("button2");
 myButton.addEventListener("click", () => {
   window.scrollTo({
@@ -68,9 +68,31 @@ myButton.addEventListener("click", () => {
   });
 });
 
+const thankYouMessage = document.getElementById("thank-you-message");
+const from = document.getElementById("form-hidden")
+
+from.addEventListener('submit', (e) => {
+  e.preventDefault();
+  thankYouMessage.style.display = 'block';
+  window.setTimeout(closeModal2, 5000)
+
+})
+
+const contactMessage = document.getElementById("contact-message");
+const form2 = document.getElementById("contact-form");
+
+form2.addEventListener('submit', (e) => {
+  e.preventDefault();
+  contactMessage.style.display = 'block';
+  window.setTimeout(closeModal3, 5000)
+
+})
+
 function closeModal2() {
     const modalOverlay = document.getElementById('modal-overlay');
     modalOverlay.style.display = 'none';
+    thankYouMessage.style.display = 'none';
+    
 }
 
 const closerButton = document.getElementById("closer-button");
