@@ -20,7 +20,7 @@
     align-items: center; 
     justify-content: center; 
     gap:10px;
-    color:var(--other-color)
+    color:black;
 }
 
 header{
@@ -426,7 +426,7 @@ footer {
     flex-direction: row-reverse;
     font-family: var(--secondary-font);
     gap: 5px;
-    color: var(--other-color);
+    color: black;
 }
 
 .footer-title p {
