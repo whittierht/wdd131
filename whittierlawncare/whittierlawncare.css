@@ -515,17 +515,16 @@ footer {
     transition: .5s;
     font-family: var(--primary-font);
     border:none;
-    margin-bottom: 420px;
-    margin-left: 500px;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
     
     }
-
-}
 
 #closer-button-contact{
     position: absolute;
     font-size: 10px;
-    margin-left: 475px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: var(--other-color);
@@ -533,7 +532,10 @@ footer {
     transition: .5s;
     font-family: var(--primary-font);
     border:none;
-    margin-top: 45px;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 #closer-button-contact:hover{
@@ -643,11 +645,6 @@ button[type=submit]:hover {
         border-radius: 5px 5px 5px 5px;
         border: 3px solid black; 
         
-    }
-
-    #closer-button{
-        margin-left: 500px;
-    
     }
 
     .contact-all {
