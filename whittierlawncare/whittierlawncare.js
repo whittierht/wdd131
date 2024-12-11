@@ -109,6 +109,7 @@ contactButton.addEventListener('click', openContactModal)
 function closeModal3() {
     const contactOverlay = document.getElementById('form-container');
     contactOverlay.style.display = 'none';
+    contactMessage.style.display = 'none';
 }
   
 const closerButton2 = document.getElementById("closer-button-contact");
@@ -118,6 +119,7 @@ function closeContactModal(event) {
     const contactOverlay = document.getElementById('form-container');
     if (event.target === contactOverlay) {
       contactOverlay.style.display = 'none';
+      contactMessage.style.display = 'none';
     }
   }
   
