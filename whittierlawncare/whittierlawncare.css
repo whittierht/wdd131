@@ -11,7 +11,8 @@
 
 /* Header */
 .icon {
-    height:120px;
+    height:115.2px;
+    width:182.4px;
     
 }
 
@@ -60,7 +61,7 @@ header a:hover {
 /* Need Help? */
 .services {
     padding-top: 1px;
-    background-image: url('images/meadow-7152269.webp');
+    background-image: url('images/meadow-7152269\ \(1\).webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -433,7 +434,9 @@ footer {
 }
 
 .icon-footer {
-    height: 50px;
+    height: 57.6px;
+    width: 91.2px;
+
 }
 /* footer */
   
@@ -626,6 +629,7 @@ button[type=submit]:hover {
 
 #services-section {
     border-top: 2px solid black;
+    min-height: 2560px;
 
 }
 /* Services */
@@ -688,6 +692,11 @@ button[type=submit]:hover {
         margin: auto;
     }
 
+    #services-section {
+        min-height: 1320px;
+    
+    }
+
 }
 
     @media screen and (min-width: 1200px){
@@ -699,7 +708,12 @@ button[type=submit]:hover {
             margin: auto;
             justify-content: center;
         }
+
+        #services-section {
+            min-height: 930px;
+        }
 }
+
 
 
 /* Screen Size */

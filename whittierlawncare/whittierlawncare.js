@@ -12,6 +12,7 @@ function generateServiceHTML(service) {
       <p>${service.description}</p>
       
       <button 
+        aria-label="buy product"
         class="open-modal" 
         data-service="${service.name}" 
         data-price="${service.price}">
